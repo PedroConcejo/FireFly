@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/auth.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand text-warning m-auto" href="#">FIREFLY</a>
+    </nav>
+
+
+    <div class="row">
+        <div class="col-2">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link navbar-dark bg-dark text-warning active" id="v-pills-profile-tab" data-toggle="pill"
+                    href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="true">Profile</a>
+                <a class="nav-link navbar-dark bg-dark text-warning" id="v-pills-local-tab" data-toggle="pill"
+                    href="#v-pills-local" role="tab" aria-controls="v-pills-local" aria-selected="false">Favorites
+                    Locals</a>
+                <a class="nav-link navbar-dark bg-dark text-warning" id="v-pills-djs-tab" data-toggle="pill"
+                    href="#v-pills-djs" role="tab" aria-controls="v-pills-djs" aria-selected="false">Favorites DJs</a>
+                <a class="nav-link navbar-dark bg-dark text-warning" id="v-pills-search-tab" data-toggle="pill"
+                    href="#v-pills-search" role="tab" aria-controls="v-pills-search" aria-selected="false">Search</a>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel"
+                    aria-labelledby="v-pills-profile-tab">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-md-pull-6 col-sm-pull-6">
+                        <!--PROFILE METHOD-->
+                        <div class="panel panel-info mx-auto">
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <h4>Profile</h4>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-6 col-xs-12">
+                                        <strong>First Name:</strong>
+                                        <input type="text" name="name" class="form-control" value="" />
+                                    </div>
+                                    <div class="span1"></div>
+                                    <div class="col-md-6 col-xs-12">
+                                        <strong>Last Name:</strong>
+                                        <input type="text" name="last_name" class="form-control" value="" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12"><strong>City:</strong></div>
+                                    <div class="col-md-12">
+                                        <input type="text" name="city" class="form-control" value="" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12"><strong>Day of Birth:</strong></div>
+                                    <div class="col-md-12">
+                                        <input type="date" name="dob" class="form-control" value="" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12"><strong>Phone Number:</strong></div>
+                                    <div class="col-md-12"><input type="number" name="phone" class="form-control"
+                                            value="" /></div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12"><strong>Email Address:</strong></div>
+                                    <div class="col-md-12"><input type="email" name="email" class="form-control"
+                                            value="" /></div>
+                                </div>
+                                <button type="button" id="save" class="btn btn-dark btn-block">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-local" role="tabpanel" aria-labelledby="v-pills-local-tab">
+                    <div class="panel panel-info mx-auto">
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <h4>Favorites Locals</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-djs" role="tabpanel" aria-labelledby="v-pills-djs-tab">
+                    <div class="panel panel-info mx-auto">
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <h4>Favorites DJs</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-search" role="tabpanel" aria-labelledby="v-pills-search-tab">
+                    <div class="panel panel-info mx-auto">
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <h4>Search</h4>
+                                </div>
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <div class="col-md-12"><strong>Friends:</strong></div>
+                                        <div class="col-md-12"><input type="text" name="Friends" class="form-control"
+                                                value="" />
+
+                                            <button class="btn btn-sm btn-outline-secondary"
+                                                type="button">Search</button></div>
+                                    </div>
+                                </form>
+
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <div class="col-md-12"><strong>Local:</strong></div>
+                                        <div class="col-md-12"><input type="text" name="local" class="form-control"
+                                                value="" />
+
+                                            <button class="btn btn-sm btn-outline-secondary"
+                                                type="button">Search</button></div>
+                                    </div>
+                                </form>
+                                <form class="form-inline">
+                                    <div class="form-group">
+                                        <div class="col-md-12"><strong>DJs:</strong></div>
+                                        <div class="col-md-12"><input type="text" name="djs" class="form-control"
+                                                value="" />
+
+                                            <button class="btn btn-sm btn-outline-secondary"
+                                                type="button">Search</button></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+        <script src="scripts/index.js"></script>
+        <script src="scripts/auth.js"></script>
+</body>
+
+</html>

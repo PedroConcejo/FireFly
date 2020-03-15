@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FireFly Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/auth.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand text-warning m-auto" href="#">FIREFLY</a>
+   </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-4 offset-4 mt-5">
+
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link navbar-dark bg-dark text-warning active" id="nav-user-tab" data-toggle="tab" href="#nav-user" role="tab" aria-controls="nav-user" aria-selected="true">USER</a>
+            <a class="nav-item nav-link navbar-dark bg-dark text-warning" id="nav-local-tab" data-toggle="tab" href="#nav-local" role="tab" aria-controls="nav-local" aria-selected="false">LOCAL</a>
+            <a class="nav-item nav-link navbar-dark bg-dark text-warning" id="nav-djs-tab" data-toggle="tab" href="#nav-djs" role="tab" aria-controls="nav-djs" aria-selected="false">DJs</a>
+          </div>
+        </nav>
+
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-user" role="tabpanel" aria-labelledby="nav-user-tab">
+            <div id="userlog">
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="user_email" class="form-control" placeholder="Email address" required="" autofocus="">
+
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="user_password" class="form-control" placeholder="Password" required="">
+
+                <button class="btn btn-lg btn-dark btn-block text-warning" id="btn-user">Login</button>
+            </div>
+            <hr style="color: black;" width="75%" />
+            <div id="usersing">
+              <label for="inputEmail" class="sr-only">User Name</label>
+              <input type="text" id="user_name" class="form-control" placeholder="User Name" required="" autofocus="">
+
+              <label for="inputEmail" class="sr-only">Email address</label>
+              <input type="email" id="user_email" class="form-control" placeholder="Email address" required="" autofocus="">
+
+              <label for="inputPassword" class="sr-only">Password</label>
+              <input type="password" id="user_password" class="form-control" placeholder="Password" required="">
+
+              <button class="btn btn-lg btn-dark btn-block text-warning" id="btn-user">Signin</button>
+          </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-local" role="tabpanel" aria-labelledby="nav-local-tab">
+            
+            <div id="locallog">
+              <label for="inputEmail" class="sr-only">Email address</label>
+              <input type="email" id="local_email" class="form-control" placeholder="Email address" required="" autofocus="">
+
+              <label for="inputPassword" class="sr-only">Password</label>
+              <input type="password" id="local_password" class="form-control" placeholder="Password" required="">
+
+              <button class="btn btn-lg btn-dark btn-block text-warning" id="btn-local">Login</button>
+          </div>
+          <hr style="color: black;" width="75%" />
+          <div id="localsign">
+            <label for="inputEmail" class="sr-only">Local Name</label>
+            <input type="text" id="local_name" class="form-control" placeholder="Local Name" required="" autofocus="">
+
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="local_email" class="form-control" placeholder="Email address" required="" autofocus="">
+
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="local_password" class="form-control" placeholder="Password" required="">
+
+            <button class="btn btn-lg btn-dark btn-block text-warning" id="btn-local">Signin</button>
+        </div>
+        </div>
+
+          <div class="tab-pane fade" id="nav-djs" role="tabpanel" aria-labelledby="nav-djs-tab">
+            <div id="djs">
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="djs_email" class="form-control" placeholder="Email address" required="" autofocus="">
+
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="djs_password" class="form-control" placeholder="Password" required="">
+
+                <button class="btn btn-lg btn-dark btn-block text-warning" id="btn-djs">Login</button>
+            </div>
+            <hr style="color: black;" width="75%" />
+            <div id="djs">
+              <label for="inputEmail" class="sr-only">DJ Name</label>
+              <input type="text" id="djs_name" class="form-control" placeholder="DJ Name" required="" autofocus="">
+
+              <label for="inputEmail" class="sr-only">Email address</label>
+              <input type="email" id="djs_email" class="form-control" placeholder="Email address" required="" autofocus="">
+
+              <label for="inputPassword" class="sr-only">Password</label>
+              <input type="password" id="djs_password" class="form-control" placeholder="Password" required="">
+
+              <button class="btn btn-lg btn-dark btn-block text-warning" id="btn-djs">Signin</button>
+          </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/auth.js"></script>
+</body>
+</html>
