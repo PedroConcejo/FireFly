@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
-const todoSchema = new mongoose.Schema({
-  user: {
+const localsSchema = new mongoose.Schema({
+  local: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'user'
   },
@@ -19,5 +19,5 @@ const todoSchema = new mongoose.Schema({
   }
 })
 
-const todoModel = mongoose.model('todos', todoSchema)
+const todoModel = mongoose.model('locals', localsSchema)
 module.exports = todoModel
